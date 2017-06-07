@@ -1,0 +1,17 @@
+#Python code for Linear Regression
+from sklear import linear_model
+#Load Training and Test datasets
+#Identify feature and response variable(s) and values must be numeric and numpy arrays
+x_train = input_variables_values_training_datasets;
+y_train = target_variable_values_training_datasets;
+x_test = input_variables_values_test_datasets;
+#Create Linear Regression object
+linear = linear_model.linearRegression()
+#train the model using training and test datasets
+linear.fit(x_train,y_train)
+linear.score(x_train,y_train)
+#Equation coefficient and intercept
+print('Coefficient: \n',linear.coef_)
+print('Intercept: \n',linear.intercept_)
+#Predict output
+predicted = linear.predict(x_test)
